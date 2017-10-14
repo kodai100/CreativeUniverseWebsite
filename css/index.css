@@ -1,0 +1,162 @@
+#title{
+    /*height: 100%;*/
+    position: relative;
+}
+#biglogo{
+    width: 95%;
+}
+
+#about{
+  color: white;
+  position: relative;
+}
+#aboutHolder{
+  position: absolute;
+  height: 306px;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  width:100%;
+  margin: auto;
+}
+
+#blog{
+    color:white;
+    /*background-color: rgba(100,100,255,0.2);*/
+    height: 170px;
+    position: relative;
+}
+#blogHolder{
+  position: absolute;
+  height: 132px;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  width:100%;
+  margin: auto;
+}
+#blog table{
+    width: 300px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+#blog table a:link{
+  color: chartreuse;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#blog table a:visited{
+    color: chartreuse;
+}
+#blog table a:hover{
+  color: rgba(102,204,204,1);
+}
+
+
+#photo{
+    color: white;
+    background: rgba(102,153,255,0.2);
+    overflow: hidden;
+}
+#photoWrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.article{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    min-width: 240px;
+}
+.thumbnail{
+    vertical-align: bottom;
+    width: 100%;
+    min-width: 240px;
+    transition: 0.3s;
+}
+.article:hover .thumbnail{
+  -moz-transform: scale(1.2,1.2) rotate(-5deg);
+  -webkit-transform: scale(1.2,1.2) rotate(-5deg);
+  -o-transform: scale(1.2,1.2) rotate(-5deg);
+  -ms-transform: scale(1.2,1.2) rotate(-5deg);
+}
+.photoCaption{
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(102,153,255,0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+.article:hover .photoCaption {
+  top: 0;
+  left: 0;
+}
+.captionHolder{
+  position: absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  height: 98px;
+  width:100%;
+  margin: auto;
+}
+
+
+#images{
+    color: white;
+    background: rgba(255,153,0,0.2);
+    overflow: hidden;
+}
+.imagesArticle{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    min-width: 240px;
+}
+.imagesCaption{
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,153,0,0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+.article:hover .imagesCaption {
+  top: 0;
+  left: 0;
+}
+
+
+#movies{
+    background: rgba(0,255,51,0.2);
+    overflow: hidden;
+}
+.moviesCaption{
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,255,51,0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+.article:hover .moviesCaption {
+  top: 0;
+  left: 0;
+}

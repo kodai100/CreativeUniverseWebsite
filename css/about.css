@@ -1,0 +1,100 @@
+#about{
+  color: white;
+  min-height: 500px;
+  position: relative;
+}
+
+#aboutContent h2{
+  margin-top: 10px;
+}
+
+#aboutHolder{
+  position: absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  height: 425px;
+  width:100%;
+  margin: auto;
+}
+
+#aboutWeb{
+  color: white;
+  position: relative;
+  min-height: 500px;
+}
+#aboutWebContent h2{
+  margin-top: 10px;
+}
+
+#aboutWebHolder{
+  position: absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  height: 387px;
+  width:100%;
+  margin: auto;
+}
+
+
+#profile{
+  color: white;
+  text-align: center;
+  min-height: 500px;
+  position: relative;
+}
+
+#profileHolder{
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 456px;
+  position: absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  height: 90%;
+  width:95%;
+  margin: auto;
+}
+
+#photoHolder{
+  width: 50%;
+  height: 100%;
+  background-image: url('../img/profile.jpg');
+  background-size: cover;
+  background-position: left center;
+  float: left;
+}
+
+#content{
+  width: 50%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+#content p{
+  margin-top: 2px;
+}
+#content h2{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#contentHolder{
+  position: absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  width: 100%;
+  height: 338px;
+  margin: auto;
+}

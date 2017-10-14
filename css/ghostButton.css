@@ -1,0 +1,23 @@
+.detailButton{
+  clear: both;
+}
+
+.buttonHolder{
+  margin: 10px 0px;
+}
+
+a.button{
+  display: inline-block;
+  width: 140px;
+  padding: 15px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  line-height: 1;
+  transition: .3s;
+}
+
+a.button:hover {
+  box-shadow: 0 0 20px 5px rgba(255,255,255,.3) inset;
+}

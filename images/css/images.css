@@ -1,0 +1,107 @@
+body{
+  background-color: black;
+}
+
+#main{
+ float: left;
+ min-width: 150px;
+}
+#right{
+  float: right;
+  width: 200px;
+  background: white;
+  text-align: center;
+  height: 100%;
+  min-height: 1000px;
+}
+#right div:nth-of-type(n+2){
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#right a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  transition: 0.3s;
+}
+#right a:link{
+  color: black;
+}
+#right a:visited{
+  color: black;
+}
+#right a:hover{
+  color: rgba(102,204,204,1);
+}
+.right_content{
+  margin-left: 180px;
+}
+
+#title{
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+  transition: 0.3s;
+}
+#title:hover{
+  background: black;
+  color: white;
+}
+#title:hover h1{
+  color: white;
+}
+#title h1{
+  color: black;
+}
+#title section{
+  font-size: 12px;
+}
+
+/*記事------------------------------------------------*/
+.article{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    /*min-width: 240px;*/
+    text-align: center;
+}
+.thumbnail{
+    vertical-align: bottom;
+    width: 100%;
+    /*height: 100%;*/
+    /*min-width: 240px;*/
+    transition: 0.3s;
+}
+.article:hover .thumbnail{
+  -moz-transform: scale(1.2,1.2) rotate(-5deg);
+  -webkit-transform: scale(1.2,1.2) rotate(-5deg);
+  -o-transform: scale(1.2,1.2) rotate(-5deg);
+  -ms-transform: scale(1.2,1.2) rotate(-5deg);
+}
+.photoCaption{
+  position: absolute;
+  top: 200%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,153,0,0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+.article:hover .photoCaption {
+  top: 0;
+  left: 0;
+}
+.captionHolder{
+  position: absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  height: 98px;
+  width:100%;
+  margin: auto;
+}

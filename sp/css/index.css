@@ -1,0 +1,47 @@
+
+#logo{
+    height: 340px;
+    background-color: rgba(0,0,0,0.92);
+    margin-bottom: 200px;
+}
+
+#lphoto{
+    padding-top: 35px;
+}
+
+#dArrow img {
+    position: absolute;
+    left:0;
+    top:275;
+}
+
+article{
+  padding: 0 10px;
+}
+
+#part{
+    text-align:center;
+    margin:auto;
+}
+
+#info{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info-inside{
+  background-color : rgba(0,0,0,0.8);
+  border : 1px solid rgba(0,200,200,0.5);
+  border-radius : 3px;
+}
+
+.blogArticle{
+    font-size: 12px;
+    text-align: left;
+}
+
+.site{
+    font-size: 12px;
+    text-align: left;
+}

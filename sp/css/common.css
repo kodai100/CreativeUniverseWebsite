@@ -1,0 +1,218 @@
+@font-face {
+  font-family: Europe Underground;
+  src: url('../fonts/EuropeUnderground_light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: devanagari;
+  src: url('../fonts/AdobeDevanagari-Italic.otf') format("opentype");
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,
+code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+h3 {
+  font-family: 'Sarpanch', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  font-style: italic;
+  color: darkcyan;
+}
+
+section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+.date {
+  font-size: 11px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {color: white; text-decoration: none;}
+a:hover {color: white; text-decoration: none;}
+a:active {color: white; text-decoration: none;}
+
+
+
+/*---------------------追従トップメニュー--------------------*/
+
+#navbar{
+  z-index: 50;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 100%;
+  min-width: 310px;
+  height: 50px;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 50px); /*スマホ重なり順バグ対策用*/
+  transform: translate3d(0, 0, 50px);
+}
+
+#navbar a{
+  display: block;
+}
+
+#navbar.top {
+  background-color: rgba(13, 13, 13, 0.92);
+  border-bottom: 1px solid rgba(0, 200, 200, 0.5);
+}
+
+#navbar.bottom {
+  background-color: rgba(200, 200, 255, 0);
+  border-top: 1px solid rgba(0, 200, 200, 0.5);
+}
+
+.navbutton{
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: rgba(36, 36, 36, 0.8);
+  border: 1px solid rgba(50, 50, 50, 0.95);
+  border-radius: 3px;
+  float: right;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  color: cyan;
+  font-family: 'Arial', sans-serif;
+  margin-top: 5px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+#heading {
+  display: block;
+  width: auto;
+  margin-top: 8px;
+  height: 40px;
+  padding-left: 15px;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  font-family: 'Europe Underground';
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: white;
+}
+/*---------------------追従トップメニュー--------------------*/
+
+body {
+  /*background: url('../img/bg3.jpg') no-repeat left top;
+  background-size: 100% auto;
+  background-attachment: fixed;*/
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+#loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 100;
+  -webkit-transform: translate3d(0, 0, 100px); /*スマホ重なり順バグ対策用*/
+  transform: translate3d(0, 0, 100px);
+}
+#loader_holder{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#loader_holder img{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+.scrollButtonHolder{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.contents {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#drawer ul li a {
+  display: block;
+  padding: 10px 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000;
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 #555;
+}
+#drawerContents{
+  background: black;
+}
+
+#main{
+  z-index: 25;
+  -webkit-transform: translate3d(0, 0, 25px); /*スマホ重なり順バグ対策用*/
+  transform: translate3d(0, 0, 25px);
+}
+
+.dummy{
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#footer {
+  z-index: 50;
+  border-top: 1px solid rgba(0, 200, 200, 0.5);
+  font-size: 14px;
+  color: white;
+  background-color: rgba(13, 13, 13, 0.92);
+  -webkit-transform: translate3d(0, 0, 50px); /*スマホ重なり順バグ対策用*/
+  transform: translate3d(0, 0, 50px);
+}
